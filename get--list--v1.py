@@ -12,6 +12,8 @@ get_things = [
 ]
 
 
+variation_list_no = ["No", "no",]
+
 name = input("What is your name?") # variable
 
 art_name = pyfiglet.figlet_format(name + "!" + "Got it!")
@@ -29,7 +31,21 @@ if get_list == ("yes"):
     print(art_if_yes)
     print(get_things)
 
+if get_list == ("No"):
+    art_if_no = pyfiglet.figlet_format("Chow!")
+    print(art_if_no)
 
+if get_list == ("Yes"):
+    art_if_yes = pyfiglet.figlet_format("Here is your list!")
+    print(art_if_yes)
+    print(get_things)
 
+if get_list == ("no"):
+    art_if_no = pyfiglet.figlet_format("Chow!")
+    print(art_if_no)
+
+else:
+    art_if_no = pyfiglet.figlet_format("Chow!")
+    print(art_if_no)
 
     
